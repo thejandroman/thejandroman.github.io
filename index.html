@@ -1,94 +1,89 @@
-<?xml version="1.1" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-    <head profile="http://www.w3.org/2005/10/profile">
-        <meta http-equiv="Content-Type" content=
-              "text/html; charset=UTF-8" />
-        <link href="css/main2.css" rel="stylesheet" type="text/css" />
-        <link rel="Shortcut Icon" type="image/x-icon" href="/image/favicon.ico"
-              />
-        <title>IdeasFTW</title>
-    </head>
-    <body>
-        <div id="page">
-            <div id="logo">
-                <a href="index.html">
-                    <img src="image/IDEASFTW.png" alt="IdeasFTW" />
-                </a>
-            </div>
-            <div class="projects">
-                <hr />
-                <a href="http://blog.ideasftw.com/">
-                    <img src="image/blog-icon-box-black-100.png" width="35"
-                         height="35" alt="Blog icon" />
-                    <img src="image/blog.png" alt="Blog" />
-                </a>
-            </div>
-            <div class="projects">
-                <hr />
-                <img src="image/projects.png" alt="Projects" /><br /><br />
-            </div>
-            <div class="projects">
-                <div class="thumbnail">
-                    <a href="http://tipsandtaps.com"
-                       target="_blank">
-                        <img class="round" src="image/tipstaps.png"
-                             alt="Tips & Taps" />
-                        <br />
-                        TIPS<strong>&TAPS</strong>
-                    </a>
-                </div>
-                <div class="thumbnail"></div>
-                <div class="thumbnail"></div>
-                <br class="clearboth" />
-                <div class="thumbnail">
-                    <a href="http://thejandroman.github.io/base-vagrant-librarian-puppet/"
-                       target="_blank">
-                        <img class="round" src="image/vagrant.png"
-                             alt="Base Vagrant Librarian Puppet" />
-                        <br />
-                        BASE<strong>VAGRANT LIBRARIAN PUPPET</strong>
-                    </a>
-                </div>
-                <div class="thumbnail"></div>
-                <div class="thumbnail">
-                    <a href="http://thejandroman.github.com/bing-wallpaper"
-                       target="_blank">
-                        <img class="round" src="image/bingWallpaper.png"
-                             alt="" />
-                        <br />
-                        BING<strong>WALLPAPER</strong>
-                    </a>
-                </div>
-                <br class="clearboth" />
-                <div class="thumbnail">
-                    <a href="http://bodybags.ideasftw.com/" target="_blank">
-                        <img class="round" src="image/bodybags.png"
-                             alt="Bodybags" />
-                        <br />
-                    BODY<strong>BAGS</strong></a>
-                </div>
-                <div class="thumbnail"></div>
-                <div class="thumbnail">
-                    <a href="http://thejandroman.github.com/mysql.sh/"
-                       target="_blank">
-                        <img class="round" src="image/mysqlSH.png"
-                             alt="mysqlSH" />
-                        <br />
-                        MySQL<strong>.sh</strong>
-                    </a>
-                </div>
-                <br class="clearboth" />
-                <hr />
-            </div>
-            <div id="footer">
-                <p>&copy; 2013 IdeasFTW</p>
-                <p><a href="mailto:alejandro@ideasftw.com">Contact</a>
-                &nbsp;|&nbsp;
-                <a href="http://www.twitter.com/IdeasFTW"
-                   target="_blank">Twitter</a></p>
-            </div>
-        </div>
-    </body>
-</html>
+---
+layout: page
+tagline:
+---
+
+{% assign sortedrepos = site.github.public_repositories | sort: 'pushed_at' | reverse %}
+<dl class="dl-horizontal">
+  {% for repo in sortedrepos %}
+  <dt><a href="{{ repo.html_url }}">{{ repo.name }}</a></dt>
+  <dd>
+    {{ repo.description }}<br />
+    {% if repo.homepage and repo.homepage != "" %}
+    <a href="{{ repo.homepage }}">Homepage</a><br />
+    {% endif %}
+    Last Modified: <strong>{{ repo.pushed_at | date_to_string }}</strong>
+  </dd>
+  <br />
+  {% endfor %}
+</dl>
+
+<!-- {% for post in paginator.posts %}
+
+     <article class="home">
+
+     <span class="post-date">
+     {% assign d = post.date | date: "%d" | plus:'0' %}
+     {{ post.date | date: "%B" }}
+     {% case d %}
+     {% when 1 or 21 or 31 %}{{ d }}st,
+     {% when 2 or 22 %}{{ d }}nd,
+     {% when 3 or 23 %}{{ d }}rd,
+     {% else %}{{ d }}th,
+     {% endcase %}
+     {{ post.date | date: "%Y" }}
+     </span>
+
+     <h2>
+     <a href="{{ site.BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+     </h2>
+
+     <div>
+     {% if post.fullview %}
+     {{ post.content }}
+     {% else %}
+     {% if post.shortinfo %}
+     {{ post.shortinfo }}
+     {% elsif post.description %}
+     {{ post.description }}
+     {% else %}
+     {{ post.excerpt }}
+     {% endif %}
+     {% endif %}
+     </div>
+
+     </article>
+     {% endfor %}
+     <hr/>
+
+     <ul class="pager">
+
+     {% if paginator.previous_page %}
+     <li class="previous">
+     {% if paginator.previous_page == 1 %}
+     <a href="{{ site.BASE_PATH }}/">&larr; Newer</a>
+     {% else %}
+     <a href="{{ site.BASE_PATH }}/{{ site.paginate_path | replace: ':num', paginator.previous_page }}">&larr; Newer</a>
+     {% endif %}
+     </li>
+     {% else %}
+     <li class="previous disabled">
+     <a>&larr; Newer</a>
+     </li>
+     {% endif %}
+
+     <li>
+     <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+     </li>
+
+     {% if paginator.next_page %}
+     <li class="next">
+     <a href="{{ site.BASE_PATH }}/{{ site.paginate_path | replace: ':num', paginator.next_page }}">Older &rarr;</a>
+     </li>
+     {% else %}
+     <li class="next disabled">
+     <a>Older &rarr;</a>
+     </li>
+     {% endif %}
+
+     </ul> -->
