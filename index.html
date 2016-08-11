@@ -3,6 +3,8 @@ layout: page
 tagline:
 ---
 
+<h3>Projects</h3>
+
 {% assign sortedrepos = site.github.public_repositories | sort: 'pushed_at' | reverse %}
 <dl class="dl-horizontal">
   {% for repo in sortedrepos %}
