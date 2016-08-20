@@ -1,0 +1,74 @@
+==================================================================
+https://keybase.io/ideasftw
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://ideasftw.com
+  * I am ideasftw (https://keybase.io/ideasftw) on keybase.
+  * I have a public key with fingerprint E8B1 37C0 D031 72C5 B957  196C 0B19 2E29 83FA AB22
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101b4ca418cb1006ed91e960bb6e3c7d7efb5d38e155c5f2bf34f247c9ad8a77f0b0a",
+            "fingerprint": "e8b137c0d03172c5b957196c0b192e2983faab22",
+            "host": "keybase.io",
+            "key_id": "0b192e2983faab22",
+            "kid": "0101b4ca418cb1006ed91e960bb6e3c7d7efb5d38e155c5f2bf34f247c9ad8a77f0b0a",
+            "uid": "4c98380d743b4b8afc1c3adc55b22319",
+            "username": "ideasftw"
+        },
+        "service": {
+            "hostname": "ideasftw.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1470957386,
+    "expire_in": 157680000,
+    "prev": "0fcd2cddb412804adaae6ca4c094172530dfe121038014259589115e6f4829be",
+    "seqno": 9,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.55
+Comment: https://keybase.io/crypto
+
+yMM/AnicrVJ7UFRVHN7lJY/BQJcaSJy8PBxiofvce++mw0yyMqhQaOMGOWz3nnsu
+XmD3rruXl0Ctk5g4SlNh+ZZNywfCDJONQw3DgDhKBJaKSJCBMDlDolSDDdRA51r9
+U/92/jlzfuf7vt/3+87piQw0hBsjYtNT3p5vxox9XR+VGewtSzZUY6IqVWHWaqwE
+PtlgqQS9mqNEkTArhhM4IdJAoAkOiASOW6DEE5C34KJogRRgJRbKIiNRHCQYBjAy
+KcoULZM0C3hB4gSWlXERFzAzJiuuIuhxexSXhmQhJxIUC3AJpwiWBIzIMyzBWwAu
+EjwJSZ6jZEEQSRIRt6tenYHMiYIXpisqqqGD4y97/8X/z77LnsjRALXgcImlKZEW
+OUEGBKAECTAMakoRvA70Qo9LcEKEViQoeGWtAqs1Y6hargCoB6tP8i9EOlCdiOv2
+qJoK1FJ0s13T3F6rztSq3Dq0AoqOv0UcouKSUI6IUQ49XkV1YVYCIYGm6KoEzeIo
+R4qzmDFY6VY80KHoCIa1cDhaeh9YrocjA4kEkiTSBMnhtCAJArSgrADO0+g5GAqX
+ZEiQBI5GJmiS4RmOJwgGWmSaI3kRYvpYO1wqZuWRTaEISXqVIpeglXkgVtvdtS3I
+YAw3hAQH6P/LEB4W9c+vm+t7auEF89IPvCv9jwxwbWpOVk18xFrbp4bpM1Vdy0wD
+dztCrtTUHu45nHNq+LitYiZS/rC3zVK2OjFjvi11rN8/8WBnXt2QzTc7szV0cb7t
+2GM6gGSDTLUnr2W9E3W9uTo/5mip9nhmeVrb6ZaevGP4nm+sbQtvjcSHPNv/1XeT
+K5YWB7XmZjTlPsyydd9JuHJ1c6a2ca698fX7daRp929vJor0In/QFjJnHoEPTasE
+9fngvk2+729PbEzyn09LKT6bZvfdSYhcv79ndJ89YvkKH2hlxp3mmz+8em80oKJ+
+TdVsYmfg3snnXgu89F5nnG0yNnqJcfDpjpbpkU8q935+/ePBuF1ptuaOqOG7t+Bl
+/otL2DZzkqekMTj6xlTX7znCBmfWsnMZZzP720sE14+nXj49tYf5ukaJXjM0YMBV
+vM556CCVF2lv2FqfsViWunmXb+p2+cWMVwqiyBeT/Su3XKvs3mkPPzHrv3r/UKop
+94391KJxgfB5xlb1NbT3hj64ERsTd6EgRRn9dtyeNDjmaGqt3uS8F9xwvP7nX8xB
+zxS5ByKy59atj1nwHg1dvDiSdiHsS/uWHZ2l8UJfrW/ws+mK3fmAPpecOXzzJIh5
+qbiyN7844Qx8tzC6IGT1vp8umxxB2b82HfGsE46cn/2jJy9wIiL5AD/6aDx7rtJ2
+q7CocKhx6P2wE5PGPwH+NrbH
+=pH9Y
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ideasftw
+
+==================================================================
