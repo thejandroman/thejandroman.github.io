@@ -1,43 +1,6 @@
-# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
+exclude: ["README.md", "contributing.json"]
 
-paginate: 10 # pagination based on number of posts
-paginate_path: "page:num"
-exclude: ["README.md"] # files to exclude
-highlighter: pygments
-markdown: kramdown
-# disqus: dbyll
-# google_analytics: dbyll
 title: Alejandro Figueroa
 
-defaults:
-  -
-    scope:
-      path: "" # empty string for all files
-    values:
-      title: IdeasFTW
-
-description: Stylish Jekyll Theme
-author:
-  name: Alejandro Figueroa
-  email: alejandro@ideasftw.com
-  github: thejandroman
-  # twitter: dbtek
-  # pinterest: asd123
-  linkedin: figueroaalejandro
-  bio: Rincón, PR
-  email_md5: 1c89f4a5ab160a547ed2176cb560375c
-
-# rss_path: feed.xml
-# categories_path: categories.html
-# tags_path: tags.html
-
-# set it as url of an image
-# sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
-sidebar_background_image: https://c6.staticflickr.com/2/1485/26428347741_615321f8d0_o.jpg
-
-BASE_PATH:
-
-gems:
-  - jekyll-paginate
+plugins:
   - github-pages
-  # - jekyll-github-metadata

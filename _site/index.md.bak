@@ -1,8 +1,0 @@
-# IdeasFTW
-
-{% assign sortedrepos = site.github.public_repositories | sort: 'pushed_at' | reverse %}
-{% for repo in sortedrepos %}
-  * [{{ repo.name }}]({{ repo.html_url }})
-    - {{ repo.description }}
-    - Last Modified: {{ repo.pushed_at }}
-{% endfor %}
